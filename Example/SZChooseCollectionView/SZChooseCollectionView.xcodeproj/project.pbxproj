@@ -15,6 +15,10 @@
 		883E4081228908A100C3B0E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883E4080228908A100C3B0E4 /* main.m */; };
 		883E408B228908A100C3B0E4 /* SZChooseCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883E408A228908A100C3B0E4 /* SZChooseCollectionViewTests.m */; };
 		883E4096228908A100C3B0E4 /* SZChooseCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883E4095228908A100C3B0E4 /* SZChooseCollectionViewUITests.m */; };
+		883E40A6228908F300C3B0E4 /* SZChooseFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 883E40A5228908F300C3B0E4 /* SZChooseFlowLayout.m */; };
+		883E40A92289090500C3B0E4 /* SZChooseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 883E40A82289090500C3B0E4 /* SZChooseCollectionView.m */; };
+		883E40AC2289412F00C3B0E4 /* SZChooseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 883E40AB2289412F00C3B0E4 /* SZChooseCollectionViewCell.m */; };
+		883E40AF2289413D00C3B0E4 /* SZChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 883E40AE2289413D00C3B0E4 /* SZChooseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		883E4091228908A100C3B0E4 /* SZChooseCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZChooseCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883E4095228908A100C3B0E4 /* SZChooseCollectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZChooseCollectionViewUITests.m; sourceTree = "<group>"; };
 		883E4097228908A100C3B0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883E40A4228908F300C3B0E4 /* SZChooseFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZChooseFlowLayout.h; sourceTree = "<group>"; };
+		883E40A5228908F300C3B0E4 /* SZChooseFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZChooseFlowLayout.m; sourceTree = "<group>"; };
+		883E40A72289090500C3B0E4 /* SZChooseCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZChooseCollectionView.h; sourceTree = "<group>"; };
+		883E40A82289090500C3B0E4 /* SZChooseCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZChooseCollectionView.m; sourceTree = "<group>"; };
+		883E40AA2289412F00C3B0E4 /* SZChooseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZChooseCollectionViewCell.h; sourceTree = "<group>"; };
+		883E40AB2289412F00C3B0E4 /* SZChooseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZChooseCollectionViewCell.m; sourceTree = "<group>"; };
+		883E40AD2289413D00C3B0E4 /* SZChooseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZChooseModel.h; sourceTree = "<group>"; };
+		883E40AE2289413D00C3B0E4 /* SZChooseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZChooseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		883E40702289089F00C3B0E4 /* SZChooseCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				883E40A3228908C400C3B0E4 /* SZChooseCollectionView */,
 				883E40712289089F00C3B0E4 /* AppDelegate.h */,
 				883E40722289089F00C3B0E4 /* AppDelegate.m */,
 				883E40742289089F00C3B0E4 /* ViewController.h */,
@@ -130,6 +143,21 @@
 				883E4097228908A100C3B0E4 /* Info.plist */,
 			);
 			path = SZChooseCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		883E40A3228908C400C3B0E4 /* SZChooseCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				883E40A4228908F300C3B0E4 /* SZChooseFlowLayout.h */,
+				883E40A5228908F300C3B0E4 /* SZChooseFlowLayout.m */,
+				883E40A72289090500C3B0E4 /* SZChooseCollectionView.h */,
+				883E40A82289090500C3B0E4 /* SZChooseCollectionView.m */,
+				883E40AA2289412F00C3B0E4 /* SZChooseCollectionViewCell.h */,
+				883E40AB2289412F00C3B0E4 /* SZChooseCollectionViewCell.m */,
+				883E40AD2289413D00C3B0E4 /* SZChooseModel.h */,
+				883E40AE2289413D00C3B0E4 /* SZChooseModel.m */,
+			);
+			path = SZChooseCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883E40AC2289412F00C3B0E4 /* SZChooseCollectionViewCell.m in Sources */,
+				883E40AF2289413D00C3B0E4 /* SZChooseModel.m in Sources */,
 				883E40762289089F00C3B0E4 /* ViewController.m in Sources */,
 				883E4081228908A100C3B0E4 /* main.m in Sources */,
 				883E40732289089F00C3B0E4 /* AppDelegate.m in Sources */,
+				883E40A92289090500C3B0E4 /* SZChooseCollectionView.m in Sources */,
+				883E40A6228908F300C3B0E4 /* SZChooseFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
